@@ -1,0 +1,203 @@
+.main{
+display: flex;
+width: 100%;
+}
+body{
+background-image: url(/assets/imagens/background.jpg);
+
+}
+header img, footer img {
+    width: 190px;
+    margin:0%;
+
+}
+#info{
+display: -webkit-inline-box;
+padding: 61px 0px 0px 0px;
+justify-content: space-evenly;
+justify-items: center;
+}
+.caixa{
+flex-direction:row;
+align-items: flex-end;
+margin:2% 35%;
+
+}
+
+#nome, #sobrenome, #cpf, #endereço, #estado, #senha, #telefone, #email {
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+}
+
+#DataN{
+width: 435px;
+height: 32px;
+margin-bottom: 15px;
+background: #FFFFFF;
+border: 1px solid #686868;
+border-radius: 7px;
+}
+
+
+#ilustra-contato{
+width: 444px;
+height: 444px;
+margin: 0px auto 0 201px;
+}    
+
+#contato {
+height: 46px;
+margin: 0px auto 44px;
+font-weight: 900;
+font-size: 40px;
+color:var(--text-titles);
+}
+
+#termo{
+font-size: 15px;
+}
+.escolha {
+
+display: block;
+position: relative;
+padding-left: 10px;
+margin-bottom:5px;
+cursor: pointer;
+font-size: 15px;
+}
+
+/* posição da bolinha */
+.escolha input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+  
+/* Customizando o botão */
+.checkmark {
+position: absolute;
+top: 3px;
+left: 0;
+height: 10px;
+width: 10px;
+background-color: #eee;
+
+}
+  
+/* qunado passar com o mouse mudar de cor */
+.escolha:hover input ~ .checkmark {
+background-color: #00000;
+}
+  
+/*a cor do botão após ser clicado */
+.escolha input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+  
+  
+  
+/* estilo do interior do botão */
+.escolha .checkmark:after {
+top: 9px;
+left: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+background: white;
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    .main{
+        
+        justify-content: center;
+    }
+    #ilustra-contato{
+        display: none;
+        }
+    
+    .caixa {
+       /* width: 100%;
+       margin:auto; 
+       background-image: url(/assets/imagens/ilustra-contato.png);
+       background-repeat: no-repeat;*/
+    }
+
+    #nome {
+       background-color: transparent;
+   }
+   #area {
+       background-color: transparent;
+   }
+   #email {
+       background-color: transparent;
+   }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .main{
+        align-items: center;
+        justify-content: center;
+    }
+    #ilustra-contato{
+        display: none;
+        }
+    
+    .caixa {
+/*
+       margin:10%;
+       background-image: url(/assets/imagens/ilustra-contato.png);
+       background-repeat: no-repeat;*/
+    }
+    #nome {
+       background-color: transparent;
+   }
+   #area {
+       background-color: transparent;
+   }
+   #email {
+       background-color: transparent;
+   }
+
+}
+
+@media only screen and (max-width:480px) {
+    .main{
+        overflow-x: none;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    #ilustra-contato{
+        display: none;
+        }
+    
+    .caixa {
+        /*
+       margin:0px;
+       background-image: url(/assets/imagens/ilustra-contato.png);
+       background-repeat: no-repeat; */
+    }
+    #nome {
+        width: 430px;
+       background-color: transparent;
+   }
+   #area {
+       width: 430px;
+       background-color: transparent;
+   }
+   #email {
+       width: 430px;
+       background-color: transparent;
+   }
+    }

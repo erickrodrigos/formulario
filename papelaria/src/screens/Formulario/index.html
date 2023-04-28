@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="/src/global.css"> 
+    <link rel="stylesheet" href="/src/components/header.css">   
+    <link rel="stylesheet" href="/src/components/footer.css">   
+    <link rel="stylesheet" href="style.css">               
+    <title>Formulário</title>
+</head>
+
+<body>
+
+<header>
+    <div>
+          <!--colocar uma logo aqui -->
+        <a id = logo><img src= "/assets/imagens/paper.jpeg" alt="logo do site"></a>
+        
+       </div> 
+</header>
+
+<main> 
+
+<form class="caixa">
+
+    <p id="contato">Formulário</p>
+
+   <div><input id="nome" type="text" placeholder="  nome"></imput>  </div>
+   <div><input id="sobrenome" type="text" placeholder="  Sobrenome"></imput>  </div>
+   <div> <p>Data de Nascimento</p><input id="DataN" type="date" placeholder="  Data de Nascimento"></imput>  </div>
+   <div><input id="telefone" type="text" placeholder="  Telefone"></imput>  </div>
+   <div><input id="endereço" type="text" placeholder="  Endereço"></imput>  </div>
+   
+   <p>Estado</p>
+   <select id="estado" name="Estado">
+    
+    <option value="">Selecione</option>
+    <option value="AC">AC</option>    <option value="AL">AL</option> <option value="AP">AP</option> <option value="AM">AM</option>
+    <option value="BA">BA</option>    <option value="CE">CE</option> <option value="DF">DF</option>
+    <option value="ES">ES</option>    <option value="GO">GO</option> <option value="MA">MA</option>
+    <option value="MS">MS</option>    <option value="MT">MT</option> <option value="MG">MG</option>
+    <option value="PA">PA</option>    <option value="PB">PB</option> <option value="PR">PR</option>
+    <option value="PE">PE</option>    <option value="PI">PI</option> <option value="RJ">RJ</option>
+    <option value="RN">RN</option>    <option value="RS">RS</option> <option value="RO">RO</option>
+    <option value="RR">RR</option>    <option value="SC">SC</option> <option value="SP">SP</option>
+    <option value="SE">SE</option>    <option value="TO">TO</option>
+             
+            </select>
+   
+   <div><input id="cpf" type="text" placeholder="  CPF"></imput>  </div>
+   <div><input id="senha" type="text" placeholder="  Senha"></imput>  </div>
+   <div><input id="email" type="e-mail" placeholder="  e-mail"></imput></div>
+    
+    <p id="termo">Concorda com os termos de uso ?</p>
+<label class="escolha"> Sim
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<p id="termo">Aceita receber E-mails informativos?</p>
+<label class="escolha"> Sim
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+    <nav id="botao"><a> Enviar</a> </nav>
+
+
+
+</form>
+
+
+
+
+<footer>
+    <div>
+        <!--colocar uma logo aqui -->
+        <a id = logo><img src= "/assets/imagens/paper.jpeg" alt="logo do site"></a>
+    </div>
+   
+       
+        
+</footer>
+
+</body>
+</html>
